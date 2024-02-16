@@ -1,0 +1,459 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #374f61;
+    color: #222222;
+}
+#root{
+    display: contents;
+    width: fit-content;
+    padding-right: 3rem;
+    padding-left:3rem;
+        
+}
+.show-style {
+    display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: #929292;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    border: solid 3px #333333e1;
+}
+.showList{
+    /* width: 95vw; */
+    width: fit-content;
+    max-width: 1470px;
+    margin:  7rem auto;
+    display: grid;
+    gap: 2rem;
+    /* justify-content: center; */
+}
+.siteName {
+    width: fit-content;
+    margin-left: 0.5rem;
+}
+
+.siteName span {
+    font-size: 20px;
+    font-weight: 700;
+    color: yellow;
+    text-shadow: 2px 2px 1px black;
+    cursor: default;
+}
+
+.siteName sub {
+    font-size: 8px;
+    color: black;
+    text-shadow: none;
+    position: absolute;
+    top: 3.3rem;
+    left: 4rem;
+
+}
+#headerSection {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    position: absolute;
+    top: 0;
+    gap: 2rem;
+    background-color: rgba(218, 227, 235, 0.356);
+
+}
+
+.show-style img {
+    height: 230px;
+    width: 130px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    cursor: default;
+}
+.show-style .rightContainer {
+    background-color: #c2c2c2;
+    border-radius: 5px;
+    margin: 0;
+    width: 8rem;
+    height: 230px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#headerSection #searchBar {
+    max-width: 30rem;
+    width: 6rem;
+    height: 2rem;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    background-color: transparent;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+#searchButton {
+    margin-right: 6.5px;
+    height: 2rem;
+    margin-bottom: 0;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    font-weight: 550;
+    color: #5f5e5e;
+}
+
+@media Screen and (min-width: 400px) {
+.show-style {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #929292;
+    border-radius: 1rem;
+    padding: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    align-items: start;
+    border: solid 3px #333333e1;
+}
+#headerSection #searchBar {
+    max-width: 30rem;
+    width: 10rem;
+    height: 2rem;
+    padding: 5px;
+    border: none;
+    background-color: white;
+    background-color: transparent;
+    font-size: large;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+#searchButton {
+margin-right: 6.5px;
+height: 2rem;
+    margin-bottom: 0;
+    border: none;
+    background-color: transparent;
+    font-size: large;
+    font-weight: 550;
+    color: #5f5e5e;
+}
+}
+@media Screen and (min-width: 520px) {
+#headerSection #searchBar {
+        max-width: 30rem;
+        width: auto;
+        height: 2rem;
+        padding: 5px;
+        border: none;
+        background-color: white;
+        background-color: transparent;
+        font-size: large;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+    }
+.show-style img {
+        height: 230px;
+        width: 180px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        cursor: default;
+    }
+.show-style .rightContainer {
+        background-color: #c2c2c2;
+        border-radius: 5px;
+        margin: 0;
+        width: 13rem;
+        height: 230px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+#headerSection {
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        position: absolute;
+        top: 0;
+        gap: 5rem;
+        background-color: rgba(218, 227, 235, 0.356);
+
+    }
+}
+@media Screen and (min-width: 716px) {
+#headerSection #searchBar {
+        width: 18rem;
+        height: 2rem;
+        padding: 5px;
+        border: none;
+        background-color: white;
+        background-color: transparent;
+        font-size: large;
+        font-weight: 500;
+        letter-spacing: 0.6px;
+    }
+        #headerSection {
+            width: 100%;
+            height: 5rem;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            position: absolute;
+            top: 0;
+            gap: 8rem;
+            background-color: rgba(218, 227, 235, 0.356);
+    
+        }
+        .siteName {
+            width: fit-content;
+            margin-left: 4rem;
+        }
+        .siteName span {
+            font-size: 30px;
+            font-weight: 700;
+            color: yellow;
+            text-shadow: 2px 2px 1px black;
+            cursor: default;
+        }
+        .siteName sub {
+            font-size: 10px;
+            color: black;
+            text-shadow: none;
+            left: 8.5rem;
+        }
+        
+}
+@media Screen and (min-width: 970px){
+    .showList{
+        grid-template-columns: repeat(2, 1fr);
+        align-items: start;
+    }
+}
+@media Screen and (min-width: 1018px){
+
+        #headerSection #searchBar {
+            width: 30rem;
+            height: 2rem;
+            padding: 5px;
+            border: none;
+            background-color: white;
+            background-color: transparent;
+            font-size: large;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+        }
+        .siteName {
+        width: fit-content;
+        margin-left: 4rem;
+    }
+        .siteName span {
+            font-size: 30px;
+            font-weight: 700;
+            color: yellow;
+            text-shadow: 2px 2px 1px black;
+            cursor: default;
+        }
+        .siteName sub {
+            font-size: 10px;
+            color: black;
+            text-shadow: none;
+            left: 8.5rem;
+        }
+            
+}
+
+@media Screen and (min-width: 1265px) {
+.showList {
+        grid-template-columns: repeat(3, 1fr);
+        align-items: start;
+        /* width: 100%; */
+        /*look at*/
+    }
+        .siteName span {
+            font-size: 30px;
+            font-weight: 700;
+            color: yellow;
+            text-shadow: 2px 2px 1px black;
+            cursor: default;
+        }
+    
+        .siteName sub {
+            font-size: 10px;
+            color: black;
+            text-shadow: none;
+            left: 8.5rem;
+        }
+}
+
+.show-style .showName{
+    text-align: center;
+    display: block;
+    margin-top: 0.3rem;
+    margin-bottom:  0.3rem;
+    font-weight: 700;
+    font-size: larger;
+    color: yellow;
+    text-shadow: 2px 2px 1px black;
+    cursor: default;
+}
+.show-style .showData{
+    display: block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-wrap: wrap;
+    color: white;
+    text-shadow: 2px 2px 1px #374f61;
+}
+.topicTitle {
+    color: yellow;
+    text-shadow: 2px 2px 1px black;
+    font-size: 15px;
+}
+
+.anchorTag {
+    color: #374f61;
+    text-shadow: none;
+    text-decoration: none;
+}
+.show-style .dataParent{
+    font-weight: 700;
+    font-size: xx-large;
+    background: rgba(0, 0, 0, 0.158);
+    width: 100%;
+    min-height: 194px;
+    max-height: fit-content;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+    margin: 0;
+    padding: 2px 0.3rem ;
+    border-radius: 6px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    
+}
+
+
+.bookMark{
+    position: absolute;
+    border: 16px solid #374f61;
+    box-shadow: -2px 0px 0px 0px #5d6470;    
+    border-top: 0;
+    border-bottom: 12px solid transparent;
+    height: 40px;
+    margin-top: -14.85rem;
+    margin-left: 5px;
+}
+.bookMark div{
+    /* background-color: green; */
+    width: 2rem;
+    position: absolute;
+    text-align: center;
+    margin-left: -1.05rem;
+}
+.bookMark span{
+    font-weight: 600;
+    display: inline-block;
+    text-shadow: -1px 2px  black;
+    color: white;
+    font-size: 13px;
+    cursor: default;
+}
+
+#headerSection .inputsSectionHeader{
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+    width: fit-content;
+    border: 1px black solid;
+    border-radius: 10px;
+    transform: translateZ(0);   
+    transition: box-shadow 2s ease-in-out;
+    position: relative;
+}
+#headerSection #searchBar:focus{
+    outline: 0;
+}
+#headerSection div:has(#searchBar:focus) {
+    box-shadow: 0 0 0 2px yellow  ;
+    outline: rgb(5, 27, 56) 2px outset;
+    animation: outlineMotion 1s forwards ;
+}
+
+@keyframes outlineMotion {
+    0% {
+        transform: translateZ(0) scale(1);
+    }
+
+    100% {
+        transform: translateZ(0) scale(1.05);
+    }
+}
+.aTagNa{
+    cursor: default;
+}
+.forMore{
+    text-align: center;
+    margin-top: 1rem;
+}
+.forMore .anchorTag2{
+    font-size: 17px;
+    color: #374f61;
+    text-shadow: 2px 1px 1px #fffffffd;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.forMore .anchorTag2:hover{
+    color: #fffffffd;
+    text-shadow:3px 2px 1px #204f72;
+    font-size: 20px;
+    text-decoration: underline yellow;
+}
+.anchorTag2 .bi{
+    text-shadow:none;
+    font-size: 15px;
+    display: inline-block;
+    padding-bottom: 10px;
+
+
+}
+.anchorTag2:hover i{
+    text-shadow: none;
+    font-size: 20px;
+    display: inline-block;
+    color: #204f72;
+}
+
+.rightContainer::-webkit-scrollbar {
+    width: 6px;   
+}
+.rightContainer::-webkit-scrollbar-thumb {
+    background: #003a8691;
+    border-radius: 7px;
+
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #0017358c;
+    border-radius: 7px;
+}
